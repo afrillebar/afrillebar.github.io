@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <!-- Data akan ditambahkan dinamis menggunakan JavaScript -->
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <div class="col-lg-12">
+              <div class="portfolio-description">
+                  <!-- Data akan ditambahkan dinamis menggunakan JavaScript -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3 id="project-title"></h3>
+              <ul id="project-info">
+                <!-- Data akan ditambahkan dinamis menggunakan JavaScript -->
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Ambil parameter dari URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectParam = urlParams.get("project");
+
+    // Data proyek
+    const projectData = {
+      Guestbook: {
+        category: "Website",
+        user: "Admin",
+        feature: "<ol><li>Guest Data List</li><li>Create Guest Data</li><li>Edit Guest Data</li><li>Delete Guest Data</li></ol>",
+        requirement: "Laravel, PHP, Bootstrap, Javascript, MySQL",
+        description: "This system is a web-based guest data management system. This system exists because of the results of a case study during an internship at the Banyumas Regency Dinporabudpar where the management of the guest book is still manual.",
+        images: [
+          "assets/img/portfolio/port_bukutamu.png",
+        ]
+      },
+      Wordpress: {
+        category: "Website",
+        user: "User",
+        requirement: "WordPress",
+        description: "This system is a website that contains information about activities that have been or will be held by the KPU.",
+        images: [
+          "assets/img/portfolio/port_webadminkpu.png",
+        ]
+      },
+      FaceAttendanceSystem: {
+        category: "Desktop",
+        user: "Admin, Students",
+        feature: "<ol><li>User Guide</li><li>Face Registration</li><li>Face Attendance</li><li>Tracking 3D Position</li></ol>",
+        requirement: "Machine Learning, K-Means Clustering, LASSO Clustering, Matplotlib, Python, Tkinter, Sklearn, OpenCV Library, Haar Cascade Classifier, LBPH, CNN",
+        description: "This system is the result of a thesis about a student attendance system using faces with a 3D kernel. So, each student no longer needs to put their face in front of the camera, but the system can detect and recognize the student from the camera installed in the corner of the classroom. <br> This thesis has been published in a journal which can be seen at the <a href='https://journal.maranatha.edu/index.php/jutisi/article/view/2730/1640'>following link</a>.",
+        images: [
+          "assets/img/portfolio/port_presensi.png",
+        ]
+      },
+      OnlinePatientRegistration: {
+        category: "Website",
+        user: "Patient",
+        feature: "<ol><li>Registration Old Patient</li><li>Registration New Patient</li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, MySQL",
+        description: "This system is used for patient registration at RSU Amanah Sumpiuh. This system has been connected to the SIMRS database used by the Hospital, so that patient personal data can be obtained in real time.",
+        images: [
+          "assets/img/portfolio/port_regonline.png",
+        ]
+      },
+      RSModul: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Login</li><li>Dashboard</li><li>Additional Modules from Each Division in Hospital</li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, SB Admin 2, MySQL",
+        description: "This system is used by each division to complement the shortcomings of the hospital's SIMRS and is connected to the SIMRS database.",
+        images: [
+          "assets/img/portfolio/port_rsmodul.png",
+        ]
+      },
+      CateringAttendance: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Admin<ol><li>Login</li><li>Dashboard</li><li>Data User</li><li>Import Data User from Excel</li><li>Data of Users Who Have Performed Attendance</li><li>Data of Users Who Have Not Performed Attendance</li><li>Export Attendance to Excel</li></ol></li><li>User<ol><li>Employee Catering Attendance</li><li>History Attendance</li></ol></li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used to carry out catering attendance for employees. The method is simply to enter the NPK that has been registered by the admin, after that employees are expected to check their personal data correctly and take attendance. <br><br> Employees can only make one attendance on the same day. The system will automatically detect NPKs who have attended on the same day. Then employees can take attendance the next day.",
+        images: [
+          "assets/img/portfolio/port_catering.png",
+          "assets/img/portfolio/port_catering_2.png",
+          "assets/img/portfolio/port_catering_3.png",
+          "assets/img/portfolio/port_catering_4.png",
+          "assets/img/portfolio/port_catering_5.png",
+        ]
+      },
+      PortalVideoTutorial: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Login<ol><li>Login</li><li>Dashboard</li><li>Master Data</li><li>Import Master Data from Excel</li><li>Export Report to Excel</li></ol></li><li>User<ol><li>Login</li><li>List of Video's Title</li><li>Show Video</li></ol></li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used for users who want to see video tutorials on using the attendance application. Users can log in based on the registered NPK and can choose which video list they want to see the tutorial for. The video comes from an embed on Youtube.<br><br> Meanwhile the admin can also see who has viewed the tutorial video based on the available filters.",
+        images: [
+          "assets/img/portfolio/port_tutorialvideo.png",
+          "assets/img/portfolio/port_tutorialvideo_2.png",
+          "assets/img/portfolio/port_tutorialvideo_3.png",
+          "assets/img/portfolio/port_tutorialvideo_4.png",
+          "assets/img/portfolio/port_tutorialvideo_5.png",
+        ]
+      },
+      TroubleshootingCustomer: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Login</li><li>Dashboard Admin</li><li>Master Data</li><li>Input Troubleshoot & Project</li><li>History Troubleshoot & Project</li><li>Report Excel & PDF</li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used to enter problem & project solutions from customers and save each work progress. So that problem solving & progress of project work can be seen from the system. Summaries can be viewed in the dashboard and reports can be downloaded in Excel or PDF format.",
+        images: [
+          "assets/img/portfolio/port_smartmanagement.png",
+          "assets/img/portfolio/port_smartmanagement_2.png",
+          "assets/img/portfolio/port_smartmanagement_3.png",
+          "assets/img/portfolio/port_smartmanagement_4.png",
+        ]
+      },
+      eDocument: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Login</li><li>Forgot Password</li><li>Master Data</li><li>Show Documents</li><li>Edit Password</li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used for distribution of employee documents by the Human Capital team. Documents in this system are taken from PDF files that have been entered into the system and PDF files, video files and sound files from Google Drive.",
+        images: [
+          "assets/img/portfolio/port_edokumen.png",
+          "assets/img/portfolio/port_edokumen_2.png",
+          "assets/img/portfolio/port_edokumen_3.png",
+          "assets/img/portfolio/port_edokumen_4.png",
+        ]
+      },
+      ARReport: {
+        category: "Website",
+        user: "User",
+        feature: "<ol><li>User Finance<ol><li>Login</li><li>Master Data Customer</li><li>Import Data from Excel</li><li>Report AR Realtime</li><li>Export Data to Excel</li></ol></li><li>User Collection<ol><li>Login</li><li>Master Data Customer</li><li>Input Data Follow Up Customer</li><li>History Follow Up</li><li>History AR Revision/Cancel</li><li>Import Data from Excel</li><li>Export Data to Excel</li></ol></li><li>User Delivery<ol><li>Login</li><li>Import Data from Excel</li><li>Export Data to Excel</li><li>Input Data Delivery and Upload Photos</li><li>Export Proof of Delivery to PDF</li></ol></li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used for Account Receivable reports from the Finance, Collection and Delivery teams. The Finance team imports invoice data which will then be inputted by the Delivery team. Then the Collection team will follow up on the invoice to the customer for payment.",
+        images: [
+          "assets/img/portfolio/port_arreport.png",
+          "assets/img/portfolio/port_arreport_2.png",
+          "assets/img/portfolio/port_arreport_3.png",
+          "assets/img/portfolio/port_arreport_4.png",
+        ]
+      },
+      eRecruitment: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Admin<ol><li>Login</li><li>Master Data</li><li>User Selection Approval</li><li>Reporting</li><li>etc</li></ol></li><li>User<ol><li>Register</li><li>Login</li><li>Dashboard</li><li>Profiling</li><li>etc</li></ol></li><li>Admin Leader<ol><li>Login</li><li>Approval User Selection from Admin</li><li>etc</li></ol></li><li>Customer<ol><li>Register</li><li>Login</li><li>Candidate Requests</li><li>etc</li></ol></li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL, API",
+        description: "This system is for online recruitment which is used by users with predetermined recruitment stages. Admin can see the history of who has applied and what stage they have reached. Customers can also make requests to candidates according to the requested criteria, then the system can provide recommendations based on these criteria. The selected candidate data is then sent to the company's ERP system using API.",
+        images: [
+          "assets/img/portfolio/port_rekrutmensa.png",
+          "assets/img/portfolio/port_rekrutmensa_2.png",
+          "assets/img/portfolio/port_rekrutmensa_3.png",
+          "assets/img/portfolio/port_rekrutmensa_4.png",
+          "assets/img/portfolio/port_rekrutmensa_5.png",
+        ]
+      },
+      Payslip: {
+        category: "Website",
+        user: "User",
+        feature: "<ol><li>User<ol><li>Login</li><li>Show Profile User</li><li>List of Salary Slips based on the Latest 3 Months</li><li>Pay Slip Every Month</li></ol></li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used to view payslips every month by users. The payslip data is uploaded by the admin every month.",
+        images: [
+          "assets/img/portfolio/port_slip.png",
+        ]
+      },
+      PerformanceManagementSystem: {
+        category: "Website",
+        user: "Admin, User (PDCA, Division, Department, Section, Analyst, Staff)",
+        feature: "<ol><li>Admin<ol><li>Login</li><li>Master Data</li><li>Import Data from Excel</li><li>Export Data to Excel</li><li>etc</li></ol></li><li>User<ol><li>Login</li><li>Input KPI Corporate</li><li>Create IPP based on Company KPI</li><li>Create PK based on the Supervisor's IPP</li><li>Create Due Date for Filling in IPP and PK</li><li>Approval</li><li>etc</li></ol></li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used to fill in KPI, IPP, PK and PICA for employees. Filled in according to the highest KPI order for subordinates and the filling time must be in accordance with the specified time limit. There is also approval for this filling.",
+        images: [
+          "assets/img/portfolio/port_ipp.png",
+          "assets/img/portfolio/port_ipp_2.png",
+        ]
+      },
+      eBupot: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Admin<ol><li>Login</li><li>Master Data Customer</li><li>Import Data Withholding Tax Slip Customer</li><li>Upload Photo of Withholding Tax Slip Customer</li><li>etc</li></ol></li><li>User<ol><li>Login</li><li>List of Withholding Tax Slip</li><li>Import Data Withholding Tax Slip Admin</li><li>Upload Photo of Withholding Tax Slip Admin</li><li>etc</li></ol></li></ol>",
+        requirement: "Odoo, Python, Docker, Visual Studio Code, AdminLTE, PostgreSQL",
+        description: "This system is used by the admin to provide information about proof of cutting to each customer along with photos. On the other hand, each customer can also provide proof of deduction which will be given to the admin.",
+        images: [
+          "assets/img/portfolio/port_ebupot.png",
+        ]
+      },
+      MonitoringDevices: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Admin<ol><li>Login</li><li>Master Data Customer</li><li>Import Data Assets</li><li>Import Troubleshoot Data</li><li>etc</li></ol></li><li>User<ol><li>Login</li><li>Show Dashboard Summary Assets</li><li>Show Summary Troubleshoot</li><li>etc</li></ol></li></ol>",
+        requirement: "Odoo, Python, Docker, Visual Studio Code, AdminLTE, PostgreSQL, CodeIgniter, PHP, Javascript, API",
+        description: "This system is used to provide information on asset data owned by each customer from our technical team. The technician team can also add what improvements have been made to the customer's existing assets. Then the data will be sent to the frontend dashboard using the API.<br><br>Then customers can see a summary of the dashboard created with CodeIgniter in the form of charts and tables. This data comes from the backend API. So, customers can immediately see the clean data that has been processed from the dashboard.",
+        images: [
+          "assets/img/portfolio/port_monitoringdevices.png",
+          "assets/img/portfolio/port_monitoringdevices_2.png",
+          "assets/img/portfolio/port_monitoringdevices_3.png",
+        ]
+      },
+      AssetManagement: {
+        category: "Website",
+        user: "Admin, User",
+        feature: "<ol><li>Admin<ol><li>Login</li><li>Dashboard</li><li>Master Data</li><li>Data Assets</li><li>History Asset</li><li>Create QR Code</li><li>Print QR Code</li><li>Daily Asset Checking</li><li>Report Daily Asset Monitoring</li><li>etc</li></ol></li><li>Verificator<ol><li>Login</li><li>Data Asset</li><li>Verification New Asset</li><li>etc</li></ol></li></ol>",
+        requirement: "CodeIgniter, PHP, Bootstrap, Javascript, Visual Studio Code, AdminLTE, MySQL",
+        description: "This system is used to monitor asset data, the history of which can be checked from the QR Code attached to the asset. Apart from that, you can also check assets on a daily basis for an asset checklist.",
+        images: [
+          "assets/img/portfolio/port_asset_management.png",
+          "assets/img/portfolio/port_asset_management_2.png",
+          "assets/img/portfolio/port_asset_management_3.png",
+        ]
+      },
+    };
+
+    // Isi informasi proyek berdasarkan parameter
+    if (projectParam && projectData.hasOwnProperty(projectParam)) {
+      const project = projectData[projectParam];
+      document.getElementById("project-title").innerHTML = `Project Information (${projectParam})`;
+      const projectInfo = document.getElementById("project-info");
+      projectInfo.innerHTML = `
+        <li><strong>Category</strong>: ${project.category}</li>
+        <li><strong>Users</strong>: ${project.user}</li>
+        <li><strong>Features</strong>: ${project.feature}</li>
+        <li><strong>Requirements</strong>: ${project.requirement}</li>
+      `;
+
+      // Isi deskripsi proyek
+    const portfolioDescription = document.querySelector(".portfolio-description");
+    portfolioDescription.innerHTML = `
+      <h2>Project Details</h2>
+      <p>${project.description}</p>
+    `;
+
+      // Isi galeri gambar menggunakan Swiper
+      const swiperWrapper = document.querySelector(".swiper-wrapper");
+      project.images.forEach((image) => {
+        const swiperSlide = document.createElement("div");
+        swiperSlide.classList.add("swiper-slide");
+
+        const imgElement = document.createElement("img");
+        imgElement.src = image;
+        imgElement.alt = "Project Image";
+
+        swiperSlide.appendChild(imgElement);
+        swiperWrapper.appendChild(swiperSlide);
+      });
+
+      // Inisialisasi Swiper setelah menambahkan gambar
+      const swiper = new Swiper(".portfolio-details-slider.swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    } else {
+      console.error("Project parameter not provided or invalid.");
+    }
+  });
+</script>
+
+</body>
+
+</html>
